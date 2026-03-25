@@ -1,10 +1,10 @@
-package Practica_1
+package practica_1
 
 fun employEvaluation(){
     println("Ingrese el salario mensual del empleado:")
-    val salary: Double = readLine()!!.toDouble()
+    val salary: Double = readln().toDouble()
     println("Ingrese la puntuación del empleado (0-10):")
-    val score: Int = readLine()!!.toInt()
+    val score: Int = readln().toInt()
 
     val performance: String = when(score){
         in 0..3 -> "Inaceptable"

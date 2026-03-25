@@ -1,18 +1,18 @@
-package Practica_1
+package practica_1
 import kotlin.random.Random
 
 fun guessNumber(){
     val numberToGuess: Int = Random.nextInt(1, 31)
-    var attempts: Int = 0
-    val attemptsLimit: Int = 5
-    var guessedCorrectly: Boolean = false
+    var attempts = 0
+    val attemptsLimit = 5
+    var guessedCorrectly = false
 
     println("¡Bienvenido al juego de adivinar el número!")
     println("Estoy pensando en un número entre 1 y 30. ¿Puedes adivinarlo?")
 
     while (!guessedCorrectly) {
         print("Ingresa tu suposición: ")
-        val userGuess: Int = readLine()!!.toInt()
+        val userGuess: Int = readln().toInt()
         attempts++
         when {
             attempts == attemptsLimit -> {

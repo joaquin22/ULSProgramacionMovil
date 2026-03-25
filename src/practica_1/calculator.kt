@@ -1,4 +1,4 @@
-package Practica_1
+package practica_1
 
 fun calculator(){
     println("====Menu====")
@@ -8,13 +8,13 @@ fun calculator(){
     println("4. Division")
     println("5. Salir")
 
-    val operation: Int = readLine()!!.toInt()
+    val operation: Int = readln().toInt()
 
     if (operation in 1..4){
         println("Ingrese el primer número:")
-        val num1: Double = readLine()!!.toDouble()
+        val num1: Double = readln().toDouble()
         println("Ingrese el segundo número:")
-        val num2: Double = readLine()!!.toDouble()
+        val num2: Double = readln().toDouble()
 
         val result = when (operation) {
             1 -> num1 + num2

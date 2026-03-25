@@ -1,4 +1,4 @@
-package Practica_1
+package practica_1
 
 import kotlin.random.Random
 
@@ -15,7 +15,7 @@ fun readUserChoice(): Choices{
         println("2: Papel")
         println("3: Tijeras")
 
-        when (readLine()!!.toInt()) {
+        when (readln().toInt()) {
             1 -> return Choices.PIEDRA
             2 -> return Choices.PAPEL
             3 -> return Choices.TIJERAS
