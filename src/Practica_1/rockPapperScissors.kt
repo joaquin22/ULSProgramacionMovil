@@ -38,9 +38,9 @@ fun determineWinner(userChoice: Choices, computerChoice: Choices): String {
 
 fun rockPapperScissors(){
     println("Bienvenido al juego de Piedra, Papel o Tijeras!")
-    val userChoice = readUserChoice()
-    val computerChoice = Choices.entries[Random.nextInt(Choices.entries.size)]
-    val result = determineWinner(userChoice, computerChoice)
+    val userChoice: Choices = readUserChoice()
+    val computerChoice: Choices = Choices.entries[Random.nextInt(Choices.entries.size)]
+    val result: String = determineWinner(userChoice, computerChoice)
     println("Tú elegiste: ${userChoice.choice}")
     println("La computadora eligió: ${computerChoice.choice}")
     println("Resultado: $result")

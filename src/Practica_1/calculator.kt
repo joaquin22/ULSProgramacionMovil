@@ -8,13 +8,13 @@ fun calculator(){
     println("4. Division")
     println("5. Salir")
 
-    val operation = readLine()!!.toInt()
+    val operation: Int = readLine()!!.toInt()
 
     if (operation in 1..4){
         println("Ingrese el primer número:")
-        val num1 = readLine()!!.toDouble()
+        val num1: Double = readLine()!!.toDouble()
         println("Ingrese el segundo número:")
-        val num2 = readLine()!!.toDouble()
+        val num2: Double = readLine()!!.toDouble()
 
         val result = when (operation) {
             1 -> num1 + num2

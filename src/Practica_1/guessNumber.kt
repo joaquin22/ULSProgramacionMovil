@@ -2,17 +2,17 @@ package Practica_1
 import kotlin.random.Random
 
 fun guessNumber(){
-    val numberToGuess = Random.nextInt(1, 31)
-    var attempts = 0
-    val attemptsLimit = 5
-    var guessedCorrectly = false
+    val numberToGuess: Int = Random.nextInt(1, 31)
+    var attempts: Int = 0
+    val attemptsLimit: Int = 5
+    var guessedCorrectly: Boolean = false
 
     println("¡Bienvenido al juego de adivinar el número!")
     println("Estoy pensando en un número entre 1 y 30. ¿Puedes adivinarlo?")
 
     while (!guessedCorrectly) {
         print("Ingresa tu suposición: ")
-        val userGuess = readLine()!!.toInt()
+        val userGuess: Int = readLine()!!.toInt()
         attempts++
         when {
             attempts == attemptsLimit -> {
