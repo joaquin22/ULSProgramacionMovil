@@ -1,6 +1,6 @@
 package Practica_1
 
-fun Calculator(){
+fun calculator(){
     println("====Menu====")
     println("1. Suma")
     println("2. Resta")
@@ -32,5 +32,5 @@ fun Calculator(){
 }
 
 fun main(){
-    Calculator()
+    calculator()
 }

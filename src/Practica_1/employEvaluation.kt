@@ -1,6 +1,6 @@
 package Practica_1
 
-fun EmployEvaluation(){
+fun employEvaluation(){
     println("Ingrese el salario mensual del empleado:")
     val salary: Double = readLine()!!.toDouble()
     println("Ingrese la puntuación del empleado (0-10):")
@@ -19,5 +19,5 @@ fun EmployEvaluation(){
 }
 
 fun main() {
-    EmployEvaluation()
+    employEvaluation()
 }

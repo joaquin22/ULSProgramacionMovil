@@ -1,7 +1,7 @@
 package Practica_1
 import kotlin.random.Random
 
-fun GuessNumber(){
+fun guessNumber(){
     val numberToGuess = Random.nextInt(1, 31)
     var attempts = 0
     val attemptsLimit = 5
@@ -31,5 +31,5 @@ fun GuessNumber(){
 }
 
 fun main(){
- GuessNumber()
+    guessNumber()
 }

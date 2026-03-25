@@ -36,7 +36,7 @@ fun determineWinner(userChoice: Choices, computerChoice: Choices): String {
     }
 }
 
-fun RockPapperScissors(){
+fun rockPapperScissors(){
     println("Bienvenido al juego de Piedra, Papel o Tijeras!")
     val userChoice = readUserChoice()
     val computerChoice = Choices.entries[Random.nextInt(Choices.entries.size)]
@@ -47,5 +47,5 @@ fun RockPapperScissors(){
 }
 
 fun main() {
-    RockPapperScissors()
+    rockPapperScissors()
 }
