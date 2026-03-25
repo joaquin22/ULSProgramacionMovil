@@ -1,6 +1,11 @@
 package practica_1
 import kotlin.random.Random
 
+/**
+ * Juego de adivinanza por consola: genera un número aleatorio entre 1 y 30
+ * y da hasta 5 intentos para acertarlo, mostrando pistas de "más bajo" o "más alto".
+ * Si no se acierta, termina con "Game Over" e indica el número correcto.
+ */
 fun guessNumber(){
     val numberToGuess: Int = Random.nextInt(1, 31)
     var attempts = 0

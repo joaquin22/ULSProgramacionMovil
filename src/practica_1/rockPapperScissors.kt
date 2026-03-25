@@ -8,6 +8,12 @@ enum class Choices(val choice: String) {
     TIJERAS("Tijeras")
 }
 
+/**
+ * Solicita al usuario una opción del menú y devuelve la elección correspondiente.
+ * Si se ingresa un número fuera de ese rango, vuelve a solicitar la opción.
+ *
+ * @return La opción elegida por el usuario como [Choices].
+ */
 fun readUserChoice(): Choices{
     while (true){
         println("Seleccione una opción:")
@@ -25,6 +31,14 @@ fun readUserChoice(): Choices{
     }
 }
 
+/**
+ * Determina el resultado de la ronda comparando la elección del usuario y la computadora.
+ *
+ * @param userChoice Elección realizada por el usuario.
+ * @param computerChoice Elección generada para la computadora.
+ * @return `"Empate"` si ambas elecciones son iguales, `"¡Ganaste!"` si el usuario vence,
+ * o `"¡Perdiste!"` si la computadora vence.
+ */
 fun determineWinner(userChoice: Choices, computerChoice: Choices): String {
     if (userChoice == computerChoice) {
         return "Empate"

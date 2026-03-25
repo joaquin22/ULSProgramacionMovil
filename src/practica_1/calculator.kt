@@ -1,5 +1,10 @@
 package practica_1
 
+/**
+ * Muestra un menú de calculadora por consola, permite elegir una operación básica
+ * (suma, resta, multiplicación o división), solicita dos números y muestra el resultado.
+ * Si se elige `5`, finaliza; para otras opciones, indica que son inválidas.
+ */
 fun calculator(){
     println("====Menu====")
     println("1. Suma")

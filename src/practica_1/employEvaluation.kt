@@ -1,5 +1,9 @@
 package practica_1
 
+/**
+ * Solicita por consola el salario mensual y la puntuación de desempeño de un empleado,
+ * clasifica su rendimiento y calcula un nuevo salario proporcional al puntaje obtenido.
+ */
 fun employEvaluation(){
     println("Ingrese el salario mensual del empleado:")
     val salary: Double = readln().toDouble()
