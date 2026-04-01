@@ -7,3 +7,4 @@ Proyecto académico de **Programación Móvil** con ejercicios introductorios en
 Actualmente el repositorio contiene las siguientes prácticas:
 
 - `src/practica_1`: Ejercicios básicos en Kotlin.
+- `src/practica_2`: Ejercicios sobre POO en Kotlin.
